@@ -81,6 +81,7 @@ const CameraTest = () => {
       style={styles.camera}
       facing={facing}
       mode="video"
+      videoQuality={"720p"}
     >
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button} onPress={toggleCameraFacing}>
