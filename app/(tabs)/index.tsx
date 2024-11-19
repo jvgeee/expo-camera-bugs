@@ -55,9 +55,7 @@ const CameraTest = () => {
     console.log("start recording");
     setIsRecording(true);
     try {
-      const recording = await cameraRef?.current?.recordAsync({
-        maxDuration: 60,
-      });
+      const recording = await cameraRef?.current?.recordAsync();
 
       console.log("Recording complete:", recording?.uri);
       // get the filesize of the recording
